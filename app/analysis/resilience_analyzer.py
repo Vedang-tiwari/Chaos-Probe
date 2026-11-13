@@ -149,3 +149,4 @@ class ResilienceAnalyzer:
             summary=summary,
             recommendations=recs,
         )
+
