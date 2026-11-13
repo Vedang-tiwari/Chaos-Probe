@@ -106,3 +106,4 @@ class MetricsTracker:
     @staticmethod
     def record_recovery(service_name: str, recovery_seconds: float) -> None:
         RECOVERY_DURATION_SECONDS.labels(service=service_name).observe(recovery_seconds)
+
