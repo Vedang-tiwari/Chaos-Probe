@@ -80,3 +80,4 @@ class RequestTimeoutFault(BaseFaultStrategy):
 
     async def cleanup(self, context: FaultContext) -> bool:
         return await self.rollback(context)
+
