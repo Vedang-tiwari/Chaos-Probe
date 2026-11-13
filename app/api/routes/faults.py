@@ -43,3 +43,4 @@ def get_fault_info(fault_type: str) -> FaultDetail:
             status_code=status.HTTP_404_NOT_FOUND,
             detail=exc.message,
         ) from exc
+
