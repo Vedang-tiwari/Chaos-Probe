@@ -1,0 +1,18 @@
+{
+  "name": "payment-api-latency-spike",
+  "service_id": "00000000-0000-0000-0000-000000000001",
+  "fault_type": "network_latency",
+  "configuration": {
+    "latency_ms": 250,
+    "jitter_ms": 30,
+    "correlation_percent": 10
+  },
+  "duration_seconds": 20,
+  "baseline_duration_seconds": 5,
+  "recovery_window_seconds": 10,
+  "safety_thresholds": {
+    "max_error_rate": 0.20,
+    "max_latency_ms": 2500.0,
+    "min_availability": 0.80
+  }
+}
