@@ -69,3 +69,4 @@ jobs:
           APP_ENV: testing
         run: |
           pytest tests/ -v --durations=10
+
