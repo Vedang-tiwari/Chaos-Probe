@@ -62,3 +62,4 @@ def calculate_resilience_score(
     )
 
     return round(max(0.0, min(100.0, total)), 1)
+
