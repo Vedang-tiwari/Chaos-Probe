@@ -23,3 +23,4 @@ def test_metrics_tracker_and_prometheus_export(client):
     assert "chaos_probe_request_latency_seconds" in text
     assert "chaos_probe_recovery_duration_seconds" in text
     assert "chaos_probe_active_faults" in text
+
