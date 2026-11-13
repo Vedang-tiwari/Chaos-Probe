@@ -26,3 +26,4 @@ class ExperimentComparisonResponse(BaseModel):
     total_experiments: int
     average_resilience_score: float
     experiments: List[Dict[str, Any]]
+
