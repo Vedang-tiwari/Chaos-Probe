@@ -60,3 +60,4 @@ class FaultRegistry:
 
 
 default_fault_registry = FaultRegistry()
+
