@@ -135,3 +135,4 @@ def test_resilience_analyzer_and_report_generator(db_session, client):
     cmp_data = cmp_res.json()
     assert cmp_data["target_service_name"] == "billing-svc"
     assert cmp_data["total_experiments"] == 1
+
