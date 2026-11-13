@@ -1,0 +1,53 @@
+profiles:
+  network_latency_moderate:
+    fault_type: "network_latency"
+    description: "Injects 500ms latency with 50ms jitter"
+    parameters:
+      latency_ms: 500
+      jitter_ms: 50
+      duration_seconds: 30
+
+  network_latency_severe:
+    fault_type: "network_latency"
+    description: "Injects 2000ms latency with 200ms jitter"
+    parameters:
+      latency_ms: 2000
+      jitter_ms: 200
+      duration_seconds: 30
+
+  packet_loss_light:
+    fault_type: "packet_loss"
+    description: "Injects 5% packet loss"
+    parameters:
+      percentage: 5.0
+      duration_seconds: 30
+
+  packet_loss_heavy:
+    fault_type: "packet_loss"
+    description: "Injects 25% packet loss"
+    parameters:
+      percentage: 25.0
+      duration_seconds: 30
+
+  cpu_stress_high:
+    fault_type: "cpu_stress"
+    description: "Loads CPU cores to 80%"
+    parameters:
+      cpu_percent: 80
+      workers: 2
+      duration_seconds: 30
+
+  memory_pressure_moderate:
+    fault_type: "memory_pressure"
+    description: "Allocates 256MB of container memory"
+    parameters:
+      allocation_mb: 256
+      duration_seconds: 30
+
+  container_kill_restart:
+    fault_type: "container_kill"
+    description: "Gracefully kills container and monitors restart"
+    parameters:
+      signal: "SIGTERM"
+      restart: true
+      duration_seconds: 30
