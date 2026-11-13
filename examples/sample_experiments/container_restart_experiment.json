@@ -1,0 +1,17 @@
+{
+  "name": "auth-gateway-container-failure",
+  "service_id": "00000000-0000-0000-0000-000000000001",
+  "fault_type": "container_kill",
+  "configuration": {
+    "action": "restart",
+    "timeout_seconds": 5
+  },
+  "duration_seconds": 10,
+  "baseline_duration_seconds": 5,
+  "recovery_window_seconds": 15,
+  "safety_thresholds": {
+    "max_error_rate": 0.90,
+    "max_latency_ms": 10000.0,
+    "min_availability": 0.20
+  }
+}
