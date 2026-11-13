@@ -1,0 +1,28 @@
+app:
+  name: "Chaos Probe"
+  version: "0.1.0"
+  description: "Controlled fault-injection and resilience testing platform"
+  environment: "development"
+  debug: true
+
+api:
+  prefix: "/api/v1"
+  cors_origins: ["*"]
+
+safety:
+  max_experiment_duration_seconds: 120
+  default_baseline_duration_seconds: 30
+  emergency_rollback_timeout_seconds: 15
+  thresholds:
+    default_max_error_rate: 0.25
+    default_max_latency_ms: 3000.0
+    default_min_availability: 0.70
+    default_max_cpu_percent: 90.0
+    default_max_memory_percent: 90.0
+
+scoring:
+  weights:
+    availability: 0.35
+    error_rate: 0.25
+    latency: 0.20
+    recovery: 0.20
