@@ -277,3 +277,4 @@ def test_safety_controller_emergency_stop():
     # Reset
     controller.reset_emergency_stop()
     assert controller.is_emergency_stopped is False
+
