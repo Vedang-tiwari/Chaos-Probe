@@ -73,3 +73,4 @@ def generate_recommendations(
         })
 
     return recs
+
